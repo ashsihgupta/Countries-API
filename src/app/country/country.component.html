@@ -1,0 +1,77 @@
+
+
+
+
+
+
+<select [(ngModel)]="selectedcountry" (change)="countrychanged()"
+>
+       <option>Select a Country</option> 
+    <option *ngFor="let data of countrydata ">
+      
+        {{data.name}}
+
+        
+    </option>
+     
+</select>
+
+<hr>
+
+
+<div>
+
+  <h5>Home - Country details</h5>
+</div>
+
+
+
+<table *ngFor="let i of displaycountry ">
+  <tr>
+    <th>Country Name</th>
+    <th >{{i.name}}</th>
+   
+  </tr>
+  
+<tr>
+    <th>capital</th>
+    <th >{{i.capital}}</th>
+   
+  </tr>
+
+  <tr>
+    <th>region</th>
+    <th >{{i.region}}</th>
+   
+  </tr>
+
+  <tr>
+    <th>Sub region</th>
+    <th >{{i.subregion}}</th>
+   
+  </tr>
+
+  <tr>
+    <th>Population</th>
+    <th >{{i.population}}</th>
+   
+  </tr>
+
+  <tr>
+    <th>area</th>
+    <th >{{i.area}}</th>
+   
+  </tr>
+
+  <tr>
+    <th>alpha3Code</th>
+    <th >{{i.alpha3Code}}</th>
+   
+  </tr>
+</table>
+
+
+
+
+<br>
+

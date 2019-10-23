@@ -1,0 +1,17 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 50%;
+  border: 0.2px solid #ddd;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+
+th, td {
+  text-align: center;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
